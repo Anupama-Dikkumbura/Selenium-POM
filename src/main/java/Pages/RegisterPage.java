@@ -74,19 +74,19 @@ public class RegisterPage {
 	}
 	
 	// Set Year
-	public void setYear(String year, String month, String date) {
+	public void setDOBYear(String year) {
 		Select yearDrop = new Select(driver.findElement(birthYearDrop));
 		yearDrop.selectByVisibleText(year);
 	}
 	
 	// Set month
-	public void setMonth(String month) {
+	public void setDOBMonth(String month) {
 		Select monthDrop = new Select(driver.findElement(birthMonthDrop));
 		monthDrop.selectByVisibleText(month);
 	}
 	
 	// Set date
-	public void setDate(String date) {
+	public void setDOBDate(String date) {
 		Select dateDrop = new Select(driver.findElement(birthDateDrop));
 		dateDrop.selectByVisibleText(date);
 	}
@@ -109,7 +109,7 @@ public class RegisterPage {
 	}
 	
 	// Set street
-	public void setAddress(String street) {
+	public void setStreet(String street) {
 		driver.findElement(streetTxtBox).sendKeys(street);
 	}
 	
